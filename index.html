@@ -5,11 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Portofolio SAN</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
-    <h1 class="fade-in">Halo, Saya SAN 👋</h1>
-    <p class="fade-in delay">Pencinta data, cokelat, dan mimpi besar.</p>
+    <div class="container">
+      <img src="assets/profile.jpg" alt="Foto Profil SAN" class="profile-img"/>
+      <div>
+        <h1>SAN</h1>
+        <p>Data Enthusiast | Cokelat Maker | Dream Builder</p>
+        <a href="assets/CV_SAN.pdf" download class="btn">Unduh CV</a>
+      </div>
+    </div>
   </header>
 
   <nav>
@@ -24,39 +32,57 @@
   <main>
     <section id="about">
       <h2>Tentang Saya</h2>
-      <p>Saya sedang membangun masa depan di bidang data dan bisnis cokelat. Saya percaya bahwa teknologi dan rasa bisa berjalan berdampingan.</p>
+      <p>Saya adalah seseorang yang percaya bahwa mimpi bisa diwujudkan dengan usaha konsisten. Saat ini saya mengejar dua dunia: <strong>teknologi dan rasa</strong>. Di satu sisi, saya mendalami dunia data dan machine learning. Di sisi lain, saya sedang membangun brand cokelat impian yang bisa menyentuh hati siapa pun.</p>
+      <blockquote>“Jangan hanya hidup dengan kepala, beri ruang untuk hati dan rasa.”</blockquote>
     </section>
 
     <section id="projects">
       <h2>Proyek</h2>
-      <ul>
-        <li><strong>🧠 ML: Klasifikasi Cokelat</strong> – Proyek Machine Learning untuk mengklasifikasi rating cokelat batangan.</li>
-        <li><strong>📓 SAN’s Choco Voyage</strong> – Jurnal rasa dari berbagai cokelat dunia.</li>
-        <li><strong>💻 Web Dev</strong> – Portofolio ini dibuat dengan HTML & CSS responsif.</li>
-      </ul>
+      <div class="project">
+        <h3>🧠 Klasifikasi Cokelat Batangan</h3>
+        <p>Proyek Machine Learning untuk mengklasifikasi rating cokelat berdasarkan atribut seperti asal biji, kandungan kakao, dan rasa. Saya menggunakan Random Forest dan XGBoost dalam model ini.</p>
+        <a href="https://github.com/khoesan/chocolate-rating" target="_blank">Lihat di GitHub →</a>
+      </div>
+
+      <div class="project">
+        <h3>📓 SAN's Choco Voyage</h3>
+        <p>Sebuah proyek personal berupa jurnal rasa dari berbagai cokelat dunia yang saya coba saat traveling. Saya menggabungkan storytelling dengan review rasa dan kemasan.</p>
+      </div>
+
+      <div class="project">
+        <h3>🌐 Portofolio Website</h3>
+        <p>Website ini dibuat dari nol dengan HTML, CSS, dan sedikit animasi CSS. Dirancang untuk mencerminkan kepribadian dan arah karier saya.</p>
+      </div>
     </section>
 
     <section id="skills">
       <h2>Keahlian</h2>
-      <div class="skills-list">
-        <span>Python</span>
-        <span>Machine Learning</span>
-        <span>Data Visualization</span>
-        <span>HTML & CSS</span>
-        <span>Git & GitHub</span>
-      </div>
+      <ul class="skills">
+        <li>Python (Pandas, NumPy, Scikit-learn)</li>
+        <li>Machine Learning</li>
+        <li>Data Visualization (Matplotlib, Seaborn)</li>
+        <li>HTML, CSS</li>
+        <li>Git & GitHub</li>
+        <li>Critical Thinking</li>
+      </ul>
     </section>
 
     <section id="contact">
       <h2>Kontak</h2>
-      <p>Email: hisan344@gmail.com</p>
+      <p>Email: <a href="khoirotun@upi.edu">khoirotun@upi.edu</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/khoirotun-hisan-117281242/" target="_blank">linkedin.com/in/khoirotun-hisan</a></p>
       <p>GitHub: <a href="https://github.com/khoesan" target="_blank">github.com/khoesan</a></p>
-      <p>LinkedIn: <a href="https://www.linkedin.com/in/khoirotun-hisan-117281242" target="_blank">Profil LinkedIn</a></p>
     </section>
   </main>
 
   <footer>
-    <p>&copy; 2025 SAN. Dibuat dengan cinta dan kode ✨</p>
+    <div class="footer-content">
+      <p>&copy; 2025 SAN. Dibuat dengan rasa dan semangat ✨</p>
+      <div class="social-icons">
+        <a href="https://www.linkedin.com/in/khoirotun-hisan-117281242/" target="_blank">🔗</a>
+        <a href="https://github.com/khoesan" target="_blank">🐙</a>
+      </div>
+    </div>
   </footer>
 </body>
 </html>
