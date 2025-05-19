@@ -11,10 +11,13 @@ html {
 
 body {
   font-family: 'Segoe UI', sans-serif;
-  background-color: #fffaf6;
   color: #3e2c2c;
   line-height: 1.6;
   font-size: 16px;
+  background-color: #fffaf6;
+  background-image: url("assets/pattern.svg");
+  background-repeat: repeat;
+  background-size: 200px;
 }
 
 /* Container */
