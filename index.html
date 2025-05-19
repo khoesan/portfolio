@@ -3,105 +3,105 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Khoirotun Hisan | Portfolio</title>
+  <title>Portofolio - Nama Kamu</title>
   <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
 <body>
 
-  <!-- Hero Section -->
+  <!-- Hero -->
   <header class="hero">
-  <div class="container">
-    <img src="assets/profile.jpg" alt="Profile Picture" class="profile-img" />
-    <h1>Khoirotun Hisan</h1>
-    <p class="tagline">Aspiring Data Analyst & Chocolate Enthusiast</p>
-    <a href="#contact" class="btn">Contact Me</a>
-  </div>
-</header>
+    <div class="container">
+      <img src="assets/profile.jpg" alt="Profile Picture" class="profile-img" />
+      <h1>Nama Kamu</h1>
+      <p class="tagline">Data Analyst & Chocolate Enthusiast</p>
+      <a href="#contact" class="btn">Hubungi Saya</a>
+    </div>
+  </header>
 
-  <!-- About Section -->
+  <!-- About -->
   <section id="about" class="section">
     <div class="container">
-      <h2>About Me</h2>
-      <p>
-        I am passionate about data, machine learning, and building a chocolate brand with purpose. 
-        Currently focusing on machine learning and exploring how technology and creativity can meet to build meaningful products.
-      </p>
+      <h2>Tentang Saya</h2>
+      <p>Saya adalah seseorang yang bersemangat dalam data dan sangat mencintai cokelat. Saya memiliki pengalaman dalam analisis data, visualisasi, dan pembuatan model machine learning sederhana. Di sisi lain, saya sedang membangun brand cokelat impian saya yang ramah dan menyenangkan.</p>
     </div>
   </section>
 
-  <!-- Projects Section -->
+  <!-- Projects -->
   <section id="projects" class="section bg-light">
     <div class="container">
-      <h2>Projects</h2>
+      <h2>Proyek</h2>
       <div class="project-grid">
         <div class="project-card">
+          <img src="assets/choco-rating.svg" alt="Icon Project" width="30">
           <h3>Chocolate Rating Classifier</h3>
-          <p>Machine learning model to predict chocolate ratings based on ingredients and origin.</p>
-          <a href="https://github.com/yourusername/choco-rating" target="_blank">GitHub</a>
+          <p>Model machine learning untuk memprediksi rating cokelat berdasarkan bahan & asal negara.</p>
         </div>
         <div class="project-card">
-          <h3>Personal Portfolio</h3>
-          <p>This responsive website built with HTML & CSS and deployed via GitHub Pages.</p>
-          <a href="https://github.com/yourusername/portfolio" target="_blank">GitHub</a>
+          <img src="assets/website-icon.svg" alt="Icon Project" width="30">
+          <h3>Website Portofolio</h3>
+          <p>Website ini dibuat menggunakan HTML, CSS, dan dihosting gratis lewat GitHub Pages.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Skills Section -->
+  <!-- Skills -->
   <section id="skills" class="section">
     <div class="container">
-      <h2>Skills</h2>
-      <ul class="skills-list">
-        <li>Python</li>
-        <li>Machine Learning</li>
-        <li>HTML & CSS</li>
-        <li>Git & GitHub</li>
-        <li>Data Analysis</li>
-        <li>Power BI</li>
-      </ul>
+      <h2>Kemampuan</h2>
       <ul class="skills-icons">
         <li><i class="fab fa-python"></i> Python</li>
         <li><i class="fab fa-html5"></i> HTML</li>
         <li><i class="fab fa-css3-alt"></i> CSS</li>
-        <li><i class="fab fa-github"></i> GitHub</li>
+        <li><i class="fab fa-github"></i> Git & GitHub</li>
+        <li><img src="assets/choco-icon.svg" alt="Chocolate Icon" width="20"> Chocolate Branding</li>
       </ul>
     </div>
   </section>
 
-  <!-- Contact Section -->
+  <!-- Contact -->
   <section id="contact" class="section bg-light">
     <div class="container">
-      <h2>Contact Me</h2>
-      <p>Email: <a href="mailto:khoirotun@upi.edu">khoirotun@upi.edu</a></p>
-      <p><a href="https://www.linkedin.com/in/khoirotun-hisan-117281242/" target="_blank">LinkedIn</a> | 
-         <a href="https://github.com/khoesan" target="_blank">GitHub</a></p>
+      <h2>Kontak</h2>
+      <p>Email: kamu@email.com</p>
+      <p>LinkedIn: <a href="https://linkedin.com/in/username" target="_blank">linkedin.com/in/username</a></p>
+      <p>GitHub: <a href="https://github.com/username" target="_blank">github.com/username</a></p>
     </div>
   </section>
 
   <!-- Footer -->
   <footer>
-    <div class="container">
-      <p>© 2025 Khoirotun Hisan. All rights reserved.</p>
-    </div>
+    <p>© 2025 Nama Kamu. Dibuat dengan penuh cinta & cokelat 🍫</p>
   </footer>
 
-  <script>
-  // Scroll animation
-  const sections = document.querySelectorAll('.section');
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('show');
-      }
-    });
-  }, { threshold: 0.1 });
+  <!-- Scroll to top -->
+  <button id="scrollToTopBtn" title="Kembali ke atas"><i class="fas fa-arrow-up"></i></button>
 
-  sections.forEach(section => {
-    section.classList.add('hidden');
-    observer.observe(section);
-  });
-</script>
+  <!-- JS for scroll animation & scroll to top -->
+  <script>
+    // Scroll animation
+    const sections = document.querySelectorAll('.section');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('show');
+        }
+      });
+    }, { threshold: 0.1 });
+
+    sections.forEach(section => {
+      section.classList.add('hidden');
+      observer.observe(section);
+    });
+
+    // Scroll to top button
+    const scrollBtn = document.getElementById('scrollToTopBtn');
+    window.onscroll = () => {
+      scrollBtn.style.display = window.scrollY > 300 ? "block" : "none";
+    };
+    scrollBtn.onclick = () => window.scrollTo({ top: 0, behavior: 'smooth' });
+  </script>
+
 </body>
 </html>
