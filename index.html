@@ -1,88 +1,106 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Portofolio Khoirotun Hisan</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <title>Khoirotun Hisan | Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
-  <header>
+
+  <!-- Hero Section -->
+  <header class="hero">
+  <div class="container">
+    <img src="assets/profile.jpg" alt="Profile Picture" class="profile-img" />
+    <h1>Khoirotun Hisan</h1>
+    <p class="tagline">Aspiring Data Analyst & Chocolate Enthusiast</p>
+    <a href="#contact" class="btn">Contact Me</a>
+  </div>
+</header>
+
+  <!-- About Section -->
+  <section id="about" class="section">
     <div class="container">
-      <img src="assets/profile.jpg" alt="Foto Profil SAN" class="profile-img"/>
-      <div>
-        <h1>Khoirotun Hisan</h1>
-        <p>Data Enthusiasts | TOPIK 4 Certified Korean Language | Undergraduate Digital Business Student</p>
-        <a href="assets/CV_SAN.pdf" download class="btn">Unduh CV</a>
+      <h2>About Me</h2>
+      <p>
+        I am passionate about data, machine learning, and building a chocolate brand with purpose. 
+        Currently focusing on machine learning and exploring how technology and creativity can meet to build meaningful products.
+      </p>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section bg-light">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="project-grid">
+        <div class="project-card">
+          <h3>Chocolate Rating Classifier</h3>
+          <p>Machine learning model to predict chocolate ratings based on ingredients and origin.</p>
+          <a href="https://github.com/yourusername/choco-rating" target="_blank">GitHub</a>
+        </div>
+        <div class="project-card">
+          <h3>Personal Portfolio</h3>
+          <p>This responsive website built with HTML & CSS and deployed via GitHub Pages.</p>
+          <a href="https://github.com/yourusername/portfolio" target="_blank">GitHub</a>
+        </div>
       </div>
     </div>
-  </header>
+  </section>
 
-  <nav>
-    <ul>
-      <li><a href="#about">Tentang</a></li>
-      <li><a href="#projects">Proyek</a></li>
-      <li><a href="#skills">Keahlian</a></li>
-      <li><a href="#contact">Kontak</a></li>
-    </ul>
-  </nav>
-
-  <main>
-    <section id="about">
-      <h2>Tentang Saya</h2>
-      <p>Saya adalah seseorang yang percaya bahwa mimpi bisa diwujudkan dengan usaha konsisten. Saat ini saya mengejar dua dunia: <strong>teknologi dan rasa</strong>. Di satu sisi, saya mendalami dunia data dan machine learning. Di sisi lain, saya sedang membangun brand cokelat impian yang bisa menyentuh hati siapa pun.</p>
-      <blockquote>“Jangan hanya hidup dengan kepala, beri ruang untuk hati dan rasa.”</blockquote>
-    </section>
-
-    <section id="projects">
-      <h2>Proyek</h2>
-      <div class="project">
-        <h3>🧠 Klasifikasi Cokelat Batangan</h3>
-        <p>Proyek Machine Learning untuk mengklasifikasi rating cokelat berdasarkan atribut seperti asal biji, kandungan kakao, dan rasa. Saya menggunakan Random Forest dan XGBoost dalam model ini.</p>
-        <a href="https://github.com/khoesan/chocolate_rating" target="_blank">Lihat di GitHub →</a>
-      </div>
-
-      <div class="project">
-        <h3>📓 SAN's Choco Voyage</h3>
-        <p>Sebuah proyek personal berupa jurnal rasa dari berbagai cokelat dunia yang saya coba saat traveling. Saya menggabungkan storytelling dengan review rasa dan kemasan.</p>
-      </div>
-
-      <div class="project">
-        <h3>🌐 Portofolio Website</h3>
-        <p>Website ini dibuat dari nol dengan HTML, CSS, dan sedikit animasi CSS. Dirancang untuk mencerminkan kepribadian dan arah karier saya.</p>
-      </div>
-    </section>
-
-    <section id="skills">
-      <h2>Keahlian</h2>
-      <ul class="skills">
-        <li>Python (Pandas, NumPy, Scikit-learn)</li>
+  <!-- Skills Section -->
+  <section id="skills" class="section">
+    <div class="container">
+      <h2>Skills</h2>
+      <ul class="skills-list">
+        <li>Python</li>
         <li>Machine Learning</li>
-        <li>Data Visualization (Matplotlib, Seaborn)</li>
-        <li>HTML, CSS</li>
+        <li>HTML & CSS</li>
         <li>Git & GitHub</li>
-        <li>Critical Thinking</li>
+        <li>Data Analysis</li>
+        <li>Power BI</li>
       </ul>
-    </section>
+      <ul class="skills-icons">
+        <li><i class="fab fa-python"></i> Python</li>
+        <li><i class="fab fa-html5"></i> HTML</li>
+        <li><i class="fab fa-css3-alt"></i> CSS</li>
+        <li><i class="fab fa-github"></i> GitHub</li>
+      </ul>
+    </div>
+  </section>
 
-    <section id="contact">
-      <h2>Kontak</h2>
-      <p>Email: <a href="khoirotun@upi.edu">khoirotun@upi.edu</a></p>
-      <p>LinkedIn: <a href="https://www.linkedin.com/in/khoirotun-hisan-117281242/" target="_blank">linkedin.com/in/khoirotun-hisan</a></p>
-      <p>GitHub: <a href="https://github.com/khoesan" target="_blank">github.com/khoesan</a></p>
-    </section>
-  </main>
+  <!-- Contact Section -->
+  <section id="contact" class="section bg-light">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <p>Email: <a href="mailto:khoirotun@upi.edu">khoirotun@upi.edu</a></p>
+      <p><a href="https://www.linkedin.com/in/khoirotun-hisan-117281242/" target="_blank">LinkedIn</a> | 
+         <a href="https://github.com/khoesan" target="_blank">GitHub</a></p>
+    </div>
+  </section>
 
+  <!-- Footer -->
   <footer>
-    <div class="footer-content">
-      <p>&copy; 2025 SAN. Dibuat dengan rasa dan semangat ✨</p>
-      <div class="social-icons">
-        <a href="https://www.linkedin.com/in/khoirotun-hisan-117281242/" target="_blank">🔗</a>
-        <a href="https://github.com/khoesan" target="_blank">🐙</a>
-      </div>
+    <div class="container">
+      <p>© 2025 Khoirotun Hisan. All rights reserved.</p>
     </div>
   </footer>
+
+  <script>
+  // Scroll animation
+  const sections = document.querySelectorAll('.section');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('show');
+      }
+    });
+  }, { threshold: 0.1 });
+
+  sections.forEach(section => {
+    section.classList.add('hidden');
+    observer.observe(section);
+  });
+</script>
 </body>
 </html>
