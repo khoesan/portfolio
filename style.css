@@ -1,0 +1,117 @@
+:root {
+  --bg: #fdf6f0;
+  --primary: #6d4c41;
+  --accent: #c59d86;
+  --highlight: #fff3e0;
+  --font: 'Segoe UI', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font);
+  background-color: var(--bg);
+  color: var(--primary);
+  line-height: 1.6;
+}
+
+header {
+  background-color: var(--highlight);
+  text-align: center;
+  padding: 3rem 1rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+nav {
+  background-color: var(--accent);
+  padding: 0.8rem;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: var(--bg);
+}
+
+main {
+  padding: 2rem 1rem;
+  max-width: 800px;
+  margin: auto;
+}
+
+section {
+  margin-bottom: 3rem;
+}
+
+h1, h2 {
+  color: var(--primary);
+  margin-bottom: 0.5rem;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.skills-list span {
+  background-color: var(--accent);
+  color: white;
+  padding: 0.4rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: var(--highlight);
+  font-size: 0.85rem;
+}
+
+/* 🔮 Animations */
+.fade-in {
+  opacity: 0;
+  transform: translateY(10px);
+  animation: fadeIn 1s ease forwards;
+}
+
+.fade-in.delay {
+  animation-delay: 0.5s;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* 📱 Responsive */
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+  }
+
+  .skills-list {
+    justify-content: center;
+  }
+}
