@@ -32,24 +32,36 @@
       font-size: 0.95rem;
     }
     /* Hero */
-    .hero {
-      padding-top: 160px;
-      padding-bottom: 120px;
-      max-width: 820px;
-      margin: auto;
-      text-align: left;
-    }
-    .hero h1 {
-      font-size: 3rem;
-      font-weight: 700;
-      margin-bottom: 15px;
-    }
-    .hero p {
-      font-size: 1.15rem;
-      color: #555;
-      max-width: 600px;
-    }
-    /* Section */
+.hero {
+  padding-top: 160px;
+  padding-bottom: 120px;
+  max-width: 900px;
+  margin: auto;
+}
+.hero-content {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.hero-photo {
+  width: 180px;
+  height: 180px;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+}
+.hero h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+.hero p {
+  font-size: 1.15rem;
+  color: #555;
+  max-width: 600px;
+}
+
+/* Section */ */
     section {
       max-width: 820px;
       margin: 80px auto;
@@ -85,9 +97,14 @@
   </nav>
 
   <div class="hero">
-    <h1>Hello, I'm SAN.</h1>
-    <p>Data Enthusiast · Machine Learning Learner · Future Chocolate Brand Founder</p>
+  <div class="hero-content">
+    <img src="assets/profile.jpg" class="hero-photo" alt="Profile" />
+    <div>
+      <h1>Hello, I'm SAN.</h1>
+      <p>Data Enthusiast · Machine Learning Learner · Future Chocolate Brand Founder</p>
+    </div>
   </div>
+</div>
 
   <section id="experience">
     <h2>Experience</h2>
