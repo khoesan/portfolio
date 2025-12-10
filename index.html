@@ -1,136 +1,176 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>SAN Portfolio</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Inter, sans-serif;
-      background: #fafafa;
-      color: #222;
-      line-height: 1.7;
-    }
-    /* Navbar */
-    nav {
-      position: fixed;
-      top: 0;
-      width: 100%;
-      padding: 18px 40px;
-      background: rgba(255,255,255,0.85);
-      backdrop-filter: blur(14px);
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      border-bottom: 1px solid #eaeaea;
-      z-index: 1000;
-      box-sizing: border-box;
-    }
-    nav a {
-      margin-left: 28px;
-      text-decoration: none;
-      color: #333;
-      font-size: 0.95rem;
-    }
-    /* Hero */
-.hero {
-      padding-top: 160px;
-      padding-bottom: 120px;
-      max-width: 820px;
-      margin: auto;
-      padding-left: 20px;
-      padding-right: 20px;
-      box-sizing: border-box;
-}
-.hero-content {
-  display: flex;
-  align-items: center;
-  gap: 40px;
-}
-.hero-photo {
-  width: 180px;
-  height: 180px;
-  border-radius: 12px;
-  object-fit: cover;
-  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
-}
-.hero h1 {
-  font-size: 3rem;
-  font-weight: 700;
-  margin-bottom: 15px;
-}
-.hero p {
-  font-size: 1.15rem;
-  color: #555;
-  max-width: 600px;
-}
-
-/* Section */ */
-    section {
-      max-width: 820px;
-      margin: 80px auto;
-      padding: 0 20px;
-      box-sizing: border-box;
-    }
-    h2 {
-      font-size: 1.6rem;
-      margin-bottom: 25px;
-      font-weight: 600;
-    }
-    .card {
-      padding: 22px;
-      background: #fff;
-      border: 1px solid #eee;
-      border-radius: 12px;
-      margin-bottom: 20px;
-      transition: 0.2s;
-    }
-    .card:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 10px 20px rgba(0,0,0,0.05);
-    }
-  </style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Khoirotun Hisan — Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Optional: replace with your preferred font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <nav>
-    <div class="logo">SAN</div>
-    <div>
-      <a href="#experience">Experience</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
-    </div>
-  </nav>
 
-  <div class="hero">
-  <div class="hero-content">
-    <img src="assets/profile.jpg" class="hero-photo" alt="Profile" />
-    <div>
-      <h1>Hello, I'm SAN.</h1>
-      <p>Data Enthusiast · Machine Learning Learner · Future Chocolate Brand Founder</p>
-    </div>
-  </div>
-</div>
+  <!-- NAVBAR -->
+  <header class="site-header">
+    <nav class="nav container">
+      <div class="brand">KH.</div>
+      <ul class="nav-list">
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-  <section id="experience">
-    <h2>Experience</h2>
-    <div class="card">
-      <h3>Position / Company</h3>
-      <p>Your experience description goes here.</p>
-    </div>
-  </section>
+  <!-- HERO -->
+  <main>
+    <section class="hero container" id="home">
+      <div class="hero-left">
+        <!-- ganti src ke assets/profile.jpg milikmu -->
+        <img src="assets/profile.jpg" alt="Foto Khoirotun Hisan" class="hero-photo">
+      </div>
 
-  <section id="projects">
-    <h2>Projects</h2>
-    <div class="card">
-      <h3>Project Title</h3>
-      <p>Your project description goes here.</p>
-    </div>
-  </section>
+      <div class="hero-right">
+        <h1 class="hero-title">Khoirotun Hisan</h1>
+        <p class="hero-sub">Data Enthusiast · Machine Learning Learner · Undergraduate Digital Business Student</p>
+        <div class="hero-cta">
+          <a class="btn" href="#projects">See My Work</a>
+          <a class="btn ghost" href="#contact">Contact</a>
+        </div>
+      </div>
+    </section>
 
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: youremail@example.com</p>
-  </section>
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section">
+      <div class="section-inner container">
+        <h2>Experience</h2>
+
+        <a href="experience-korea.html" class="card link-card">
+          <h3>2025 Sookmyung UNESCO UNITWIN Advanced Workshop</h3>
+          <p>Mengikuti workshop di Korea Selatan sebagai peserta terpilih dan mengembangkan proyek autonomous car menggunakan deep learning.</p>
+        </a>
+
+        <a href="experience-wide.html" class="card link-card">
+          <h3>2025 Sookmyung UNESCO UNITWIN Women in Digital and Entrepreneurial Leadership Program (WiDE)</h3>
+          <p>Terpilih sebagai satu dari delapan peserta untuk mengikuti pelatihan lanjutan di Sookmyung Women’s University, Korea Selatan.</p>
+        </a>
+
+        <a href="experience-ml.html" class="card link-card">
+          <h3>Machine Learning Cohort – Coding Camp powered by DBS Foundation (2025)</h3>
+          <p>Menyelesaikan pembelajaran Machine Learning dan memimpin capstone project sebagai team leader.</p>
+        </a>
+
+        <a href="experience-tutor.html" class="card link-card">
+          <h3>Korean Language Tutor Staff - HelloCation Korea (2024)</h3>
+          <p>Mengembangkan kurikulum dan mengajar kelas bahasa Korea tingkat menengah.</p>
+        </a>
+
+        <a href="experience-digipro.html" class="card link-card">
+          <h3>Head of Consumption – DIGIPRO 4.0 (2023)</h3>
+          <p>Bertanggung jawab mengelola anggaran, memimpin tim, dan menyediakan konsumsi.</p>
+        </a>
+
+      </div>
+    </section>
+
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section bg-light">
+      <div class="section-inner container">
+        <h2>Projects</h2>
+
+        <article class="card featured">
+          <h3>Quibly - Capstone Project</h3>
+          <p style="text-align: justify;">Aplikasi website yang dibuat untuk mempermudah dan mempercepat pengguna dalam memahami dokumen ilmiah yang relatif panjang. Quibly memungkinkan pengguna untuk mendapatkan ringkasan secara otomatis, mengekstraksi kata kunci relevan, sekaligus mengintegrasikan kata kunci tersebut dengan pencarian google schoolar.</p>
+          <p><a href="https://github.com/khoesan/capstone-project" target="_blank" rel="noopener">View on GitHub →</a></p>
+        </article>
+
+        <div class="project-grid">
+          <article class="card">
+            <h3>K-Drama Recommendation</h3>
+            <p style="text-align: justify;">Proyek yang bertujuan untuk membangun sistem rekomendasi drama Korea (K-Drama) menggunakan pendekatan Content-Based Filtering, yang merekomendasikan drama berdasarkan kemiripan konten (genre).</p>
+            <p><a href="https://github.com/khoesan/kdrama-recommendation" target="_blank" rel="noopener">View on GitHub →</a></p>
+          </article>
+        </div>
+        
+        <div class="project-grid">
+          <article class="card">
+            <h3>Chocolate Rating</h3>
+            <p style="text-align: justify;">Proyek yang bertujuan untuk membangun model machine learning yang mampu memprediksi kategori rating cokelat batangan (low, medium, high) berdasarkan berbagai fitur seperti persentase kakao, asal perusahaan, dan asal biji kakao.</p>
+            <p><a href="https://github.com/khoesan/chocolate_rating" target="_blank" rel="noopener">View on GitHub →</a></p>
+          </article>
+        </div>
+
+        <div class="project-grid">
+          <article class="card">
+            <h3>ETL Pipeline</h3>
+            <p style="text-align: justify;">Proyek yang membangun sebuah ETL pipeline sederhana yang terdiri dari tiga tahap utama: Extract, Transform, dan Load. Data produk dikumpulkan melalui proses web scraping dari sebuah website, kemudian dilakukan pembersihan dan transformasi data, dan hasil akhirnya dimuat ke dalam dua repositori.</p>
+            <p><a href="https://github.com/khoesan/data-pipeline" target="_blank" rel="noopener">View on GitHub →</a></p>
+          </article>
+        </div>
+
+        <div class="project-grid">
+          <article class="card">
+            <h3>Satelite Image Classification</h3>
+            <p style="text-align: justify;">This project is a deep learning-based image classification task that aims to distinguish two types of satellite imagery: cloudy and water. The model is developed using TensorFlow and trained on a custom categorized dataset.</p>
+            <p><a href="https://github.com/khoesan/satellite-image-classification" target="_blank" rel="noopener">View on GitHub →</a></p>
+          </article>
+        </div>
+
+        <div class="project-grid">
+          <article class="card">
+            <h3>Bike Sharing Data Analysis</h3>
+            <p style="text-align: justify;">Proyek ini bertujuan untuk menganalisis data penyewaan sepeda menggunakan Python, melakukan data wrangling & exploratory data analysis (EDA), dan membuat dashboard interaktif dengan Streamlit.</p>
+            <p><a href="https://github.com/khoesan/bike-sharing" target="_blank" rel="noopener">View on GitHub →</a></p>
+          </article>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section">
+      <div class="section-inner container">
+        <h2>Skills</h2>
+        <ul class="skills-list">
+          <li><a href="https://link-sertifikat-python" target="_blank">Python</a></li>
+          <li><a href="https://link-sertifikat-sql" target="_blank">SQL</a></li>
+          <li><a href="https://link-sertifikat-ml" target="_blank">Machine Learning</a></li>
+          <li><a href="https://link-sertifikat-excel" target="_blank">Excel</a></li>
+          <li><a href="https://link-sertifikat-git" target="_blank">Git & GitHub</a></li>
+          <li><a href="https://link-sertifikat-ds" target="_blank">Data Science Basics</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- LANGUAGE -->
+    <section id="skills" class="section">
+      <div class="section-inner container">
+        <h2>Language</h2>
+        <ul class="skills-list">
+          <li><a target="_blank">Bahasa Indonesia (Native)</a></li>
+          <li><a href="https://certs.duolingo.com/d1c6a37e03f258e6b58ac3cbc0057f15" target="_blank">English (B2)</a></li>
+          <li><a href="https://drive.google.com/file/d/13kDn3Y0EhUwEYNXeFvVhf0iy1MMsn_su/view?usp=sharing" target="_blank">Korean (Intermediate)</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section bg-light">
+      <div class="section-inner container">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:khoirotun@upi.edu">khoirotun@upi.edu</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/khoirotun-hisan-117281242/" target="_blank" rel="noopener">Khoirotun Hisan</a></p>
+        <p>GitHub: <a href="https://github.com/khoesan" target="_blank" rel="noopener">khoesan</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>&copy; 2025 Khoirotun Hisan — Built with care.</small>
+    </div>
+  </footer>
+
 </body>
 </html>
